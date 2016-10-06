@@ -1,0 +1,6 @@
+agent:
+  image: hashicorp/docker-consul
+  volumes:
+    - /data/consul:/consul/data
+    - ./config:/consul/config
+  net: host

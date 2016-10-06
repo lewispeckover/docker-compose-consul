@@ -1,0 +1,22 @@
+{
+        "datacenter": "$DATACENTER",
+        "node_name": "$NODE_NAME",
+        "bind_addr": "$BIND_ADDR",
+        "skip_leave_on_interrupt": true,
+        "data_dir": "/consul/data",
+        "server": $SERVER,
+        "bootstrap_expect": $BOOTSTRAP_EXPECT,
+        "ui": true,
+        "encrypt" : "",
+        "addresses":
+        {
+                "http": "$ADDRESS_HTTP",
+                "dns": "$ADDRESS_DNS"
+        },
+        "ports" :
+        {
+                "http": 8500,
+                "dns": 53
+        },
+        "domain": "consul"
+}
